@@ -203,7 +203,7 @@
 }
 
 /* Media Query > 992px */
-@media all and ( max-width: 768px ) {
+@media all and ( min-width: 992px ) {
 
   /* column */
   .col-lg-1 {

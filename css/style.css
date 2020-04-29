@@ -1,3 +1,15 @@
+h1 {
+  margin: 21px 0;
+}
+h3 {
+  margin: 19px 0;
+}
+hr {
+  margin: 8px 0;
+}
+.container {
+  max-width: 100%;
+}
 .row {
   width: 992px;
   margin-left: auto;
@@ -48,6 +60,7 @@
 }
 
 #why .row img {
+  height: 260px;
   background-color: #428bca;
   border-radius: 50%;
   padding: 30px
