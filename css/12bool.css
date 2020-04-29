@@ -43,13 +43,12 @@
   display: table;
   clear: both;
 }
-
 [class*="col-"] {
   float: left;
 }
 
 /* Media Query < 768px */
-@media all and ( max-width: 768px ) {
+@media all and ( max-width: 767px ) {
 
   /* column */
   .col-xs-1 {
@@ -68,7 +67,7 @@
     width: calc( ( 100% / 12 ) * 5 );
   }
   .col-xs-6 {
-    width: calc( ( 100% / 12 ) * 6 );
+    width: calc( ( 100% / 12 ) * 6 );    /* NOTE: 50% */
   }
   .col-xs-7 {
     width: calc( ( 100% / 12 ) * 7 );
@@ -86,7 +85,7 @@
     width: calc( ( 100% / 12 ) * 11 );
   }
   .col-xs-12 {
-    width: calc( ( 100% / 12 ) * 12 );
+    width: calc( ( 100% / 12 ) * 12 );    /* NOTE: 100% */
   }
 
   /* offset */
@@ -106,7 +105,7 @@
     margin-left: calc( ( 100% / 12 ) * 5 );
   }
   .col-xs-offset-6 {
-    margin-left: calc( ( 100% / 12 ) * 6 );
+    margin-left: calc( ( 100% / 12 ) * 6 );    /* NOTE: 50% */
   }
   .col-xs-offset-7 {
     margin-left: calc( ( 100% / 12 ) * 7 );
@@ -125,8 +124,8 @@
   }
 }
 
-/* 768px < Media Query < 992px */
-@media all and ( min-width: 768px ) and ( max-width: 992px ) {
+/* 768px ≤ Media Query < 992px */
+@media all and ( min-width: 768px ) and ( max-width: 991px ) {
 
   /* column */
   .col-md-1 {
@@ -145,7 +144,7 @@
     width: calc( ( 100% / 12 ) * 5 );
   }
   .col-md-6 {
-    width: calc( ( 100% / 12 ) * 6 );
+    width: calc( ( 100% / 12 ) * 6 );    /* NOTE: 50% */
   }
   .col-md-7 {
     width: calc( ( 100% / 12 ) * 7 );
@@ -163,7 +162,7 @@
     width: calc( ( 100% / 12 ) * 11 );
   }
   .col-xs-12 {
-    width: calc( ( 100% / 12 ) * 12 );
+    width: calc( ( 100% / 12 ) * 12 );    /* NOTE: 100% */
   }
 
   /* offset */
@@ -183,7 +182,7 @@
     margin-left: calc( ( 100% / 12 ) * 5 );
   }
   .col-md-offset-6 {
-    margin-left: calc( ( 100% / 12 ) * 6 );
+    margin-left: calc( ( 100% / 12 ) * 6 );    /* NOTE: 50% */
   }
   .col-md-offset-7 {
     margin-left: calc( ( 100% / 12 ) * 7 );
@@ -202,7 +201,7 @@
   }
 }
 
-/* Media Query > 992px */
+/* 992px ≤ Media Query */
 @media all and ( min-width: 992px ) {
 
   /* column */
@@ -222,7 +221,7 @@
     width: calc( ( 100% / 12 ) * 5 );
   }
   .col-lg-6 {
-    width: calc( ( 100% / 12 ) * 6 );
+    width: calc( ( 100% / 12 ) * 6 );    /* NOTE: 50% */
   }
   .col-lg-7 {
     width: calc( ( 100% / 12 ) * 7 );
@@ -240,7 +239,7 @@
     width: calc( ( 100% / 12 ) * 11 );
   }
   .col-lg-12 {
-    width: calc( ( 100% / 12 ) * 12 );
+    width: calc( ( 100% / 12 ) * 12 );    /* NOTE: 100% */
   }
 
   /* offset */
@@ -260,7 +259,7 @@
     margin-left: calc( ( 100% / 12 ) * 5 );
   }
   .col-lg-offset-6 {
-    margin-left: calc( ( 100% / 12 ) * 6 );
+    margin-left: calc( ( 100% / 12 ) * 6 );    /* NOTE: 50% */
   }
   .col-lg-offset-7 {
     margin-left: calc( ( 100% / 12 ) * 7 );
